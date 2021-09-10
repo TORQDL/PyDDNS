@@ -1,0 +1,19 @@
+{
+    "dreamhost": [{
+        "authentication": {
+            "api_key": "api_key_from_dreamhost"
+        },
+        "records": {
+            "domain_or_subdomain": {
+                "ipv4": true,
+                "ipv6": true,
+                "local_ip": false
+            },
+            "domain_or_subdomain": {
+                "ipv4": true,
+                "ipv6": true,
+                "local_ip": false
+            }
+        }
+    }]
+}
