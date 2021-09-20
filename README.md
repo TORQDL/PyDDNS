@@ -130,14 +130,18 @@ Once you have your API key, you can fill in the `dreamhost.json` configuration f
 <a id="config-cloudflare"></a>
 <h3><img src="https://www.cloudflare.com/favicon.ico" alt="Cloudflare Logo" width="20" height="20">&nbsp;Cloudflare</h3>
 
-[Cloudflare Dashboard](https://dash.cloudflare.com/profile/api-tokens)
-
-```bash
-curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
-     -H "Authorization: Bearer 1234567893feefc5f0q5000bfo0c38d90bbeb" \
-     -H "Content-Type:application/json"
-```
-
+> TODO:
+> - instructions for finding cloudflare API key
+> - instructions for finding Cloudflare zone id
+> - instructions for creating API token for DNS
+> 
+> [Cloudflare Dashboard](https://dash.cloudflare.com/profile/api-tokens)
+>
+> ```bash
+> curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+>      -H "Authorization: Bearer 1234567893feefc5f0q5000bfo0c38d90bbeb" \
+>      -H "Content-Type:application/json"
+> ```
 
 ```json
 {
@@ -175,12 +179,17 @@ curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
 <a id="howtorun"></a>
 ### How to Run
 
-TODO
+> TODO:
+> - running based on automated install script
+> - running based on git clone
 
 <a id="schedule"></a>
 ### Schedule
 
-TODO
+> TODO:
+> - scheduling PyDDNS to run regularly
+> - scheduling PyDDNS to check for updates via automated script
+> - scheduling PyDDNS to check for updates via git
 
 <a id="acknowledgments"></a>
 ## Acknowledgments
