@@ -4,11 +4,10 @@
 
 &nbsp;
 <p align="center">
-    <img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/PyDDNS_Logo.svg" width="300px" alt="PyDDNS" />
+    <img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/PyDDNS_Logo.svg" width="50%" alt="PyDDNS" />
 </p>
 <h3 align="center">Python DDNS for Dreamhost and Cloudflare</h3>
-
-# &nbsp;
+<hr>
 
 PyDDNS is a python based Dynamic Domain Name System updater for Dreamhost and Cloudflare.
 
@@ -217,7 +216,8 @@ PyDDNS does not collect any usage statistics. However, as it connects to and uti
 <a id="donation"></a>
 ## Donation
 
-TODO
+> TODO:
+> - add links for donations
 
 <hr>
 
