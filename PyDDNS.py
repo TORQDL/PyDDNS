@@ -34,6 +34,9 @@ import platform
 # Set logging level
 logging.basicConfig(level=logging.DEBUG)
 
+# Set demo mode
+DEMO_MODE = True
+
 def get_authentication(DNS_Provider):
     AUTH = []
     PROVIDER = DNS_Provider['provider']
@@ -94,8 +97,12 @@ def make_it_so():
         raise Exception("This script requires Python 3.5+")
         
     # this finds our json config files
-    PATH_TO_CONFIG_FILES = os.getcwd() + "/sample_config/"
-    CONFIG_FILES = [FILE_NAME for FILE_NAME in os.listdir(PATH_TO_CONFIG_FILES) if FILE_NAME.endswith('.json')]
+    PATH_TO_CONFIG_FILES = os.getcwd() + "/config/"
+    if DEMO_MODE:
+        logging.info("Running in Demo mode, so only finding sample config file, such as sample_config.json and sample_config2.json")
+        CONFIG_FILES = [FILE_NAME for FILE_NAME in os.listdir(PATH_TO_CONFIG_FILES) if FILE_NAME.startswith('sample_config') and FILE_NAME.endswith('.json')]
+    else:
+        CONFIG_FILES = [FILE_NAME for FILE_NAME in os.listdir(PATH_TO_CONFIG_FILES) if FILE_NAME.endswith('.json')]
 
     # we need both the json and an index number so use enumerate()
     for JSON_FILE_INDEX, CONFIG_FILE in enumerate(CONFIG_FILES):
@@ -114,9 +121,12 @@ def make_it_so():
 
                 # check which provider and process accordingly
                 if PROVIDER == 'cloudflare':
-                    update_dns_cloudflare()
+                    # TODO itterate over zone info
+                    # TODO itterate over records in each zone
+                    update_dns_cloudflare(AUTH, ZONE, RECORD)
                 elif PROVIDER == 'dreamhost':
-                    update_dns_dreamhost()
+                    # TODO itterate over records
+                    update_dns_dreamhost(AUTH, RECORD)
 
 #### Let's do it!
 make_it_so()

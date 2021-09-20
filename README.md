@@ -104,23 +104,26 @@ PyDDNS supports updating both IPv4 and IPv6 addresses in DNS using A and AAAA re
 Once you have your API key, you can fill in the `dreamhost.json` configuration file as follows:
 ```json
 {
-    "dreamhost": [{
-        "authentication": {
-            "api_key": "ABCD1234EFGH5678"
-        },
-        "records": {
-            "example.com": {
-                "ipv4": true,
-                "ipv6": true,
-                "local_ip": false
+    "dns": [
+        {
+            "provider": "dreamhost",
+            "authentication": {
+                "api_key": "ABCD1234EFGH5678"
             },
-            "sub.example.com": {
-                "ipv4": true,
-                "ipv6": true,
-                "local_ip": false
+            "records": {
+                "example.com": {
+                    "ipv4": true,
+                    "ipv6": true,
+                    "local_ip": false
+                },
+                "sub.example.com": {
+                    "ipv4": true,
+                    "ipv6": true,
+                    "local_ip": false
+                }
             }
         }
-    }]
+    ]
 }
 ```
 
@@ -138,49 +141,34 @@ curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
 
 ```json
 {
-    "cloudflare": [{
-        "authentication": {
-            "api_token": "api_token_from_cloudflare",
-            "api_key": {
-                "api_key": "api_key_from_cloudflare",
-                "account_email": "cloudflare_account_email"
-            }
-        },
-        "zones": {
-            "zone_id":{
-                "records": {
-                    "domain_or_subdomain":{
-                        "ipv4": true,
-                        "ipv6": true,
-                        "proxied": true,
-                        "local_ip": false
-                    },
-                    "domain_or_subdomain":{
-                        "ipv4": true,
-                        "ipv6": true,
-                        "proxied": true,
-                        "local_ip": false
-                    }
-                }
+    "dns": [
+        {
+            "provider": "cloudflare",
+            "authentication": {
+                "api_token": "1234567893feefc5f0q5000bfo0c38d90bbeb",
+                "api_key": "3feefc5f0q5000bfo0c38d90bbeb123456789",
+                "account_email": "yourname@example.com"
             },
-            "zone_id":{
-                "records": {
-                    "domain_or_subdomain":{
-                        "ipv4": true,
-                        "ipv6": true,
-                        "proxied": true,
-                        "local_ip": false
-                    },
-                    "domain_or_subdomain":{
-                        "ipv4": true,
-                        "ipv6": true,
-                        "proxied": true,
-                        "local_ip": false
+            "zones": {
+                "5000bfo0c38d90bbeb1234567893feefc5f0q": {
+                    "records": {
+                        "example.com": {
+                            "ipv4": true,
+                            "ipv6": true,
+                            "proxied": true,
+                            "local_ip": false
+                        },
+                        "sub.example.com": {
+                            "ipv4": true,
+                            "ipv6": true,
+                            "proxied": true,
+                            "local_ip": false
+                        }
                     }
                 }
             }
         }
-    }]
+    ]
 }
 ```
 

@@ -1,3 +1,13 @@
+# For security reasons, only including the sample_config.json
+# Other configuration JSON files will be excluded so that you
+# can safely keep them in the config folder whereever this repo
+# was cloned to.
+config/
+!config/sample_config*.json
+
+# Other git repos synced as children of this one
+gits/
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -6,9 +16,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Other git repos
-gits/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
