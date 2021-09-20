@@ -40,10 +40,10 @@ print("Current Time: ", time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 """
     Python Version Check
 """
-if not (sys.version_info.major == 3 and sys.version_info.minor >= 5):
-    print("PyDDNS requires Python 3.5 or higher!")
+if not (sys.version_info.major == 3 and sys.version_info.minor >= 8):
+    print("PyDDNS requires Python 3.8 or higher!")
     print("You are using Python {}.{}.".format(sys.version_info.major, sys.version_info.minor))
-    msg = 'PyDDNS requires Python 3.5 or higher! You are using Python {}.{}.'.format(sys.version_info.major, sys.version_info.minor)
+    msg = 'PyDDNS requires Python 3.8 or higher! You are using Python {}.{}.'.format(sys.version_info.major, sys.version_info.minor)
     syslog.syslog(syslog.LOG_ERR, msg)
     sys.exit(msg)
 
@@ -234,6 +234,7 @@ def process_online_json():
         print("\nPyDDNS cannot find sample config files. It will use the sample from the PyDDNS GitHub repository.")
         url = "https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/config/sample_config.json"
         CONFIG_DATA = json.loads(urlopen(url).read().decode("UTF-8"))
+        logging.debug("JSON data pulled from GitHub: %s", CONFIG_DATA)
         process_providers_from_json(CONFIG_DATA)
 
 """
@@ -243,15 +244,14 @@ def make_it_so():
     PATH_TO_CONFIG_FILES = os.getcwd() + "/config/"
     if DEMO_MODE:
         print("\nPyDDNS is running in Demo mode. Only sample config files will be used, such as sample_config.json and sample_config2.json")
-        # if os.path.exists(PATH_TO_CONFIG_FILES):
-        #     CONFIG_FILES = [FILE_NAME for FILE_NAME in os.listdir(PATH_TO_CONFIG_FILES) if FILE_NAME.startswith('sample_config') and FILE_NAME.endswith('.json')]
-        #     if CONFIG_FILES:
-        #         process_local_json(PATH_TO_CONFIG_FILES, CONFIG_FILES)
-        #     else:
-        #         process_online_json()
-        # else:
-        #     process_online_json()
-        process_online_json()
+        if os.path.exists(PATH_TO_CONFIG_FILES):
+            CONFIG_FILES = [FILE_NAME for FILE_NAME in os.listdir(PATH_TO_CONFIG_FILES) if FILE_NAME.startswith('sample_config') and FILE_NAME.endswith('.json')]
+            if CONFIG_FILES:
+                process_local_json(PATH_TO_CONFIG_FILES, CONFIG_FILES)
+            else:
+                process_online_json()
+        else:
+            process_online_json()
     else:
         if os.path.exists(PATH_TO_CONFIG_FILES):
             CONFIG_FILES = [FILE_NAME for FILE_NAME in os.listdir(PATH_TO_CONFIG_FILES) if FILE_NAME.endswith('.json')]
