@@ -203,11 +203,13 @@ Once you have your API key, you can fill in the `dreamhost.json` configuration f
 <a id="acknowledgments"></a>
 ## Acknowledgments
 
-PyDDNS was inspired by and uses code from [dreampy_dns](https://github.com/gsiametis/dreampy_dns) by [Georgios Siametis](https://github.com/gsiametis) and [cloudflare-ddns](https://github.com/owenlsa/cloudflare-ddns) by [LLLLnnnn](https://github.com/owenlsa).
+<!-- PyDDNS was inspired by and uses code from [dreampy_dns](https://github.com/gsiametis/dreampy_dns) by [Georgios Siametis](https://github.com/gsiametis) and [cloudflare-ddns](https://github.com/owenlsa/cloudflare-ddns) by [LLLLnnnn](https://github.com/owenlsa). -->
+
+<p>PyDDNS was inspired by and uses code from <a href="https://github.com/gsiametis/dreampy_dns" target="_blank">dreampy_dns</a> by&ensp;<a href="https://github.com/gsiametis"><img alt="GitHub Logo" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/octicon.svg" height="14px" title="GitHub">&nbsp;Georgios Siametis</a> and <a href="https://github.com/owenlsa/cloudflare-ddns" target="_blank">cloudflare-ddns</a> by&ensp;<a href="https://github.com/owenlsa"><img alt="GitHub Logo" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/octicon.svg" height="14px" title="GitHub">&nbsp;LLLLnnnn</a>.</p>
 
 <!-- Issue labels for the repository are managed using [git-labelmaker](https://github.com/himynameisdave/git-labelmaker) by [Dave Lunny](https://github.com/himynameisdave). -->
 
-<p>Issue labels for the repository are managed using <a href="https://github.com/himynameisdave/git-labelmaker" target="_blank">git-labelmaker</a> by&ensp;<a href="https://www.gitkraken.com/boards"><img alt="GitHub Logo" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/octicon.svg" height="14px" title="GitHub">&nbsp;Dave Lunny</a></p>
+<p>Issue labels for the repository are managed using <a href="https://github.com/himynameisdave/git-labelmaker" target="_blank">git-labelmaker</a> by&ensp;<a href="https://www.gitkraken.com/boards"><img alt="GitHub Logo" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/octicon.svg" height="14px" title="GitHub">&nbsp;Dave Lunny</a>.</p>
 
 <p>Issue tracking and automation are managed on&ensp;<a href="https://www.gitkraken.com/boards" target="_blank"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg" height="14px" title="GitKraken Boards"></a></p>
 
