@@ -26,7 +26,7 @@ PyDDNS is a python based Dynamic Domain Name System updater for DreamHost and Cl
 * [Donation](#donation)
 
 <hr>
-<p>Issue tracking available on&ensp;<a href="https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg" height="14px" title="GitKraken Boards"></a></p>
+<p>Issue tracking available on&ensp;<a href="https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T" target="_blank"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg" height="14px" title="GitKraken Boards"></a></p>
 <hr>
 
 <a id="getting-started"></a>
@@ -204,6 +204,12 @@ Once you have your API key, you can fill in the `dreamhost.json` configuration f
 ## Acknowledgments
 
 PyDDNS was inspired by and uses code from [dreampy_dns](https://github.com/gsiametis/dreampy_dns) by [Georgios Siametis](https://github.com/gsiametis) and [cloudflare-ddns](https://github.com/owenlsa/cloudflare-ddns) by [LLLLnnnn](https://github.com/owenlsa).
+
+<!-- Issue labels for the repository are managed using [git-labelmaker](https://github.com/himynameisdave/git-labelmaker) by [Dave Lunny](https://github.com/himynameisdave). -->
+
+<p>Issue labels for the repository are managed using <a href="https://github.com/himynameisdave/git-labelmaker" target="_blank">git-labelmaker</a> by&ensp;<a href="https://www.gitkraken.com/boards"><img alt="GitHub Logo" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/octicon.svg" height="14px" title="GitHub">&nbsp;Dave Lunny</a></p>
+
+<p>Issue tracking and automation are managed on&ensp;<a href="https://www.gitkraken.com/boards" target="_blank"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg" height="14px" title="GitKraken Boards"></a></p>
 
 <a id="license"></a>
 ## License
