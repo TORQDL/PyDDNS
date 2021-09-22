@@ -4,7 +4,7 @@
 
 &nbsp;
 <p align="center">
-    <img src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/PyDDNS_Logo.svg" width="50%" alt="PyDDNS" />
+    <img src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/PyDDNS_Logo.svg" width="65%" alt="PyDDNS" />
 </p>
 <h3 align="center">Python DDNS for DreamHost and Cloudflare</h3>
 <hr>
@@ -26,7 +26,7 @@ PyDDNS is a python based Dynamic Domain Name System updater for DreamHost and Cl
 * [Donation](#donation)
 
 <hr>
-<p>Issue tracking available on&ensp;<a href="https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg" height="16px" title="GitKraken Boards"></a></p>
+<p>Issue tracking available on&ensp;<a href="https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg" height="14px" title="GitKraken Boards"></a></p>
 <hr>
 
 <a id="getting-started"></a>
