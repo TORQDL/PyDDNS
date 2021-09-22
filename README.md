@@ -4,7 +4,7 @@
 
 &nbsp;
 <p align="center">
-    <img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/PyDDNS_Logo.svg" width="50%" alt="PyDDNS" />
+    <img src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/PyDDNS_Logo.svg" width="50%" alt="PyDDNS" />
 </p>
 <h3 align="center">Python DDNS for DreamHost and Cloudflare</h3>
 <hr>
@@ -27,9 +27,9 @@ PyDDNS is a python based Dynamic Domain Name System updater for DreamHost and Cl
 
 <hr>
 
-Issue tracking available on [![GitKraken Boards](https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/vendor/gitkraken_boards.svg)](https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T)
+Issue tracking available on [![GitKraken Boards](https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg)](https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T)
 
-<!-- <p>Issue tracking available on&ensp;<a href="https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/vendor/gitkraken_boards.svg" height="16px" title="GitKraken Boards"></a></p> -->
+<!-- <p>Issue tracking available on&ensp;<a href="https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/gitkraken_boards.svg" height="16px" title="GitKraken Boards"></a></p> -->
 
 <hr>
 
@@ -47,7 +47,7 @@ Python 3 with urllib. Should be installed by default, if not use your package ma
 #### Automated Installation
 Run the following command in your terminal:
 ```bash
-curl -s -S -L https://raw.githubusercontent.com/TORQDL/pyddns/master/scripts/install.sh | sh -s -- -v
+curl -s -S -L https://raw.githubusercontent.com/TORQDL/PyDDNS/master/scripts/install.sh | sh -s -- -v
 ```
 
 The script also accepts some options:
@@ -93,7 +93,7 @@ PyDDNS supports updating both IPv4 and IPv6 addresses in DNS using A and AAAA re
 | `local_ip`            | Whether the local IP address should be used instead of the public IP address. If set to `true`, the local IP address will be used.<br><br>Boolean: `true` or `false` |
 
 <a id="config-dreamhost"></a>
-<h3><img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/vendor/dreamhost_favicon.png" alt="DreamHost Logo" title="DreamHost" width="20" height="20">&nbsp;DreamHost</h3>
+<h3><img src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/dreamhost_favicon.png" alt="DreamHost Logo" title="DreamHost" width="20" height="20">&nbsp;DreamHost</h3>
 
 #### What you will need:
 
@@ -141,7 +141,7 @@ Once you have your API key, you can fill in the `dreamhost.json` configuration f
 ```
 
 <a id="config-cloudflare"></a>
-<h3><img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/vendor/cloudflare_favicon.ico" alt="Cloudflare Logo" title="Cloudflare" width="20" height="20">&nbsp;Cloudflare</h3>
+<h3><img src="https://raw.githubusercontent.com/TORQDL/PyDDNS/initial_build/artwork/vendor/cloudflare_favicon.ico" alt="Cloudflare Logo" title="Cloudflare" width="20" height="20">&nbsp;Cloudflare</h3>
 
 > TODO:
 > - instructions for finding cloudflare API key
@@ -214,7 +214,7 @@ PyDDNS was inspired by and uses code from [dreampy_dns](https://github.com/gsiam
 
 PyDDNS is licensed under the MIT License, a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. This is not legal advice. [Learn more about repository licenses](https://docs.github.com/articles/licensing-a-repository/#disclaimer).
 
-See the PyDDNS [LICENSE](https://github.com/TORQDL/pyddns/blob/master/LICENSE)
+See the PyDDNS [LICENSE](https://github.com/TORQDL/PyDDNS/blob/master/LICENSE)
 
 <a id="privacy"></a>
 ## Privacy
