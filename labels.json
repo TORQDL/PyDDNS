@@ -1,29 +1,36 @@
 [
-  { "name": "Priority: Low", "color": "#009800" },
-  { "name": "Priority: Medium", "color": "#fbca04" },
-  { "name": "Priority: High", "color": "#eb6420" },
-  { "name": "Priority: Critical", "color": "#e11d21" },
-  { "name": "Status: Abandoned", "color": "#000000" },
-  { "name": "Status: Accepted", "color": "#009800" },
-  { "name": "Status: Available", "color": "#bfe5bf" },
-  { "name": "Status: Blocked", "color": "#e11d21" },
-  { "name": "Status: Breaking", "color": "#d73a4a" },
-  { "name": "Status: Completed", "color": "#006b75" },
-  { "name": "Status: In Progress", "color": "#cccccc" },
-  { "name": "Status: On Hold", "color": "#e11d21" },
-  { "name": "Status: Pending", "color": "#fef2c0" },
-  { "name": "Status: Review Needed", "color": "#fbca04" },
-  { "name": "Status: Revision Needed", "color": "#e11d21" },
-  { "name": "Status: Backlog", "color": "#ffffff" },
-  { "name": "Status: Won't Fix", "color": "#ffffff" },
-  { "name": "Type: Bug", "color": "#e11d21" },
-  { "name": "Type: Maintenance", "color": "#fbca04" },
-  { "name": "Type: Testing", "color": "#fbca04" },
-  { "name": "Type: Documentation", "color": "#0075ca" },
-  { "name": "Type: Enhancement", "color": "#84b6eb" },
-  { "name": "Type: Question", "color": "#cc317c" },
-  { "name": "Type: Duplicate", "color": "#cccccc" },
-  { "name": "Type: Help Wanted", "color": "#159818" },
-  { "name": "Type: Invalid", "color": "#e6e6e6" },
-  { "name": "Type: Discussion", "color": "#d4c5f9" }
+  {"name": "Priority: Critical", "color": "#BF4292", "description": "These issues take precendence and should be worked on immediately."},
+  {"name": "Priority: High", "color": "#CC3D3D", "description": "These issues should be worked on as soon as possible."},
+  {"name": "Priority: Medium", "color": "#E67A2E", "description": "These are normal priority issues."},
+  {"name": "Priority: Low", "color": "#FFC04D", "description": "These issues need to be worked on, but are not a priority."},
+  {"name": "Priority: Backlog", "color": "#FFFFFF", "description": "These issues will be worked on only as time permits."},
+
+  {"name": "Status: Available", "color": "#BFE5BF", "description": "Indicates that an issue is ready to be worked on."},
+  {"name": "Status: In Progress", "color": "#B2EBF2", "description": "Indicates that an issue is already being worked on."},
+  {"name": "Status: On Hold", "color": "#E11D21", "description": "Indicates a reason that the issue is not being worked on."},
+  {"name": "Status: Completed", "color": "#2196F3", "description": "Indicates that an issue is completed, but not yet deployed."},
+  {"name": "Status: Deployed", "color": "#999999", "description": "Indicates that an issue is deployed and closed out."},
+
+  {"name": "Status: Won't Fix", "color": "#000000", "description": "Indicates that work won't continue on an issue, pull request, or discussion."},
+  {"name": "Status: Abandoned", "color": "#000000", "description": "Indicates that an issue, pull request, or discussion has been abandoned and closed."},
+
+  {"name": "Status: Help Wanted", "color": "#009800", "description": "Indicates that a maintainer wants help on an issue or pull request."},
+  {"name": "Status: Good First Issue", "color": "#5319E7", "description": "Indicates a good issue for first-time contributors."},
+
+  {"name": "PR: Review Needed", "color": "#FBCA04", "description": "This pull request needs to be reviewed."},
+  {"name": "PR: Pending", "color": "#FEF2C0", "description": "This pull request is being reviewed."},
+  {"name": "PR: Accepted", "color": "#009800", "description": "This pull request has been reviewed and accepted."},
+  {"name": "PR: Blocked", "color": "#E11D21", "description": "This pull request has been reviewed and blocked. A reason should be left in the comments."},
+
+  {"name": "Type: Bug", "color": "#E11D21", "description": "Indicates an unexpected problem or unintended behavior."},
+  {"name": "Type: Enhancement", "color": "#84b6eb", "description": "Indicates new feature requests."},
+
+  {"name": "Type: Question", "color": "#E91E63", "description": "Indicates that an issue, pull request, or discussion needs more information."},
+  {"name": "Type: Discussion", "color": "#5319E7", "description": "Indicates that the issue is being used for discussion of a topic rather than to track an issue or pull request."},
+
+  {"name": "Type: Maintenance", "color": "#3F51B5", "description": "Indicates that the issue is related to maintencance, such as updating dependencies."},
+  {"name": "Type: Documentation", "color": "#0052CC", "description": "Indicates a need for improvements or additions to documentation."},
+
+  {"name": "Type: Duplicate", "color": "#000000", "description": "Indicates similar issues, pull requests, or discussions."},
+  {"name": "Type: Invalid", "color": "#000000", "description": "Indicates that an issue, pull request, or discussion is no longer relevant."}
 ]
