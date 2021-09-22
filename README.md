@@ -6,17 +6,17 @@
 <p align="center">
     <img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/PyDDNS_Logo.svg" width="50%" alt="PyDDNS" />
 </p>
-<h3 align="center">Python DDNS for Dreamhost and Cloudflare</h3>
+<h3 align="center">Python DDNS for DreamHost and Cloudflare</h3>
 <hr>
 
-PyDDNS is a python based Dynamic Domain Name System updater for Dreamhost and Cloudflare.
+PyDDNS is a python based Dynamic Domain Name System updater for DreamHost and Cloudflare.
 
 * [Getting Started](#getting-started)
     * [Requirements](#requirements)
     * [Installation](#installation)
 * [Usage](#usage)
     * [Configuration](#configuration)
-        * [Dreamhost](#config-dreamhost)
+        * [DreamHost](#config-dreamhost)
         * [Cloudflare](#config-cloudflare)
     * [How to Run](#howtorun)
     * [Schedule](#schedule)
@@ -24,6 +24,10 @@ PyDDNS is a python based Dynamic Domain Name System updater for Dreamhost and Cl
 * [License](#license)
 * [Privacy](#privacy)
 * [Donation](#donation)
+
+<hr>
+<p>Issue tracking available on&ensp;<a href="https://app.gitkraken.com/glo/board/YTtVYXnT7gBLXt4T"><img alt="GitKraken Boards" class="" src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/vendor/gitkraken_boards.svg" style="filter: invert(1); height: 16px;" title="GitKraken Boards"></a></p>
+<hr>
 
 <a id="getting-started"></a>
 ## Getting Started
@@ -59,15 +63,15 @@ Please read these instructions.
 <a id="configuration"></a>
 ### Configuration
 
-Configuration is done through JSON in a configuration file. Dreamhost and Cloudflare each use different configuration parameters for authentication, but use the same information for updating your DNS records.
+Configuration is done through JSON in a configuration file. DreamHost and Cloudflare each use different configuration parameters for authentication, but use the same information for updating your DNS records.
 
 PyDDNS supports updating both IPv4 and IPv6 addresses in DNS using A and AAAA records resspectively. It can update the record using either your public IP address (most common) or the local IP address (less common).
 
 ### JSON Configuration Parameters
 
-| Dreamhost Specific    | Description                                 |
+| DreamHost Specific    | Description                                 |
 | --------------------- | ------------------------------------------- |
-| `api_key`             | Your Dreamhost API Key<br><br>Example: `ABCD1234EFGH5678` |
+| `api_key`             | Your DreamHost API Key<br><br>Example: `ABCD1234EFGH5678` |
 
 | Cloudflare Specific   | Description                                 |
 | --------------------- | ------------------------------------------- |
@@ -85,13 +89,13 @@ PyDDNS supports updating both IPv4 and IPv6 addresses in DNS using A and AAAA re
 | `local_ip`            | Whether the local IP address should be used instead of the public IP address. If set to `true`, the local IP address will be used.<br><br>Boolean: `true` or `false` |
 
 <a id="config-dreamhost"></a>
-<h3><img src="https://www.dreamhost.com/assets/favicons/favicon-f9ebe354d3e28f93ebaa6523488be0049829393ae313ab3b2e6497952c4f295d.ico" alt="Dreamhost Logo" width="20" height="20">&nbsp;DreamHost</h3>
+<h3><img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/vendor/dreamhost_favicon.png" alt="DreamHost Logo" title="DreamHost" width="20" height="20">&nbsp;DreamHost</h3>
 
 #### What you will need:
 
-* Dreamhost API Key: you will need your Dreamhost API key, configured for all DNS functions.
+* DreamHost API Key: you will need your DreamHost API key, configured for all DNS functions.
 
-> You can get your API key from the [Dreamhost Web Panel](https://panel.dreamhost.com/?tree=home.api). For more information on this, please see the [Dreamhost API Overview](https://help.dreamhost.com/hc/en-us/articles/217560167-API_overview).
+> You can get your API key from the [DreamHost Web Panel](https://panel.dreamhost.com/?tree=home.api). For more information on this, please see the [DreamHost API Overview](https://help.dreamhost.com/hc/en-us/articles/217560167-API_overview).
 > 
 > When configuring your API key, please give it access to **All** dns functions:
 > 
@@ -133,7 +137,7 @@ Once you have your API key, you can fill in the `dreamhost.json` configuration f
 ```
 
 <a id="config-cloudflare"></a>
-<h3><img src="https://www.cloudflare.com/favicon.ico" alt="Cloudflare Logo" width="20" height="20">&nbsp;Cloudflare</h3>
+<h3><img src="https://raw.githubusercontent.com/TORQDL/pyddns/initial_build/artwork/vendor/cloudflare_favicon.ico" alt="Cloudflare Logo" title="Cloudflare" width="20" height="20">&nbsp;Cloudflare</h3>
 
 > TODO:
 > - instructions for finding cloudflare API key
@@ -211,7 +215,7 @@ See the PyDDNS [LICENSE](https://github.com/TORQDL/pyddns/blob/master/LICENSE)
 <a id="privacy"></a>
 ## Privacy
 
-PyDDNS does not collect any usage statistics. However, as it connects to and utilizes the Dreamhost and/or Cloudflare APIs, certain information may be collected by Dreamhost and/or Cloudflare per their respective privacy policies and terms of use. Please visit [Dreamhost](https://www.dreamhost.com) and [Cloudflare](https://www.cloudflare.com) for more information.
+PyDDNS does not collect any usage statistics. However, as it connects to and utilizes the DreamHost and/or Cloudflare APIs, certain information may be collected by DreamHost and/or Cloudflare per their respective privacy policies and terms of use. Please visit [DreamHost](https://www.dreamhost.com) and [Cloudflare](https://www.cloudflare.com) for more information.
 
 <a id="donation"></a>
 ## Donation
