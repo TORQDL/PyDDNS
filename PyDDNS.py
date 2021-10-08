@@ -50,7 +50,8 @@ if not (sys.version_info.major == 3 and sys.version_info.minor >= 8):
 """
     Change to directory where script is
 """
-# Changing directory to where the script is running from. Uncomment next print line for debug
+# Changing directory to where the script is running from.
+# Uncomment next print line for debug.
 # print("chdir to", sys.path[0])
 os.chdir(sys.path[0])
 
